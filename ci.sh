@@ -38,7 +38,7 @@ GAP="/home/gap/inst/${GAPDIRNAME}/bin/gap.sh -l $PWD/gaproot; --quitonbreak -q"
 
 # Run package test
 $GAP <<GAPInput
-if TestPackage("$PKG_NAME") <> true then
+if TestPackage(LowercaseString("$PKG_NAME")) <> true then
     FORCE_QUIT_GAP(1);
 fi;
 QUIT_GAP(0);
