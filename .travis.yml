@@ -15,9 +15,18 @@ env:
     - GAPDIRNAME="gap-master"
 
   matrix:
+    - PKG_NAME=curlInterface
+    - PKG_NAME=datastructures
+    - PKG_NAME=Digraphs
     - PKG_NAME=example
+    - PKG_NAME=IO
+    - PKG_NAME=JupyterKernel
+    - PKG_NAME=Memoisation
     - PKG_NAME=openmath
-    - PKG_NAME=zeromqinterface
+    - PKG_NAME=permut
+    - PKG_NAME=Semigroups
+    - PKG_NAME=ZeroMQInterface
+    - PKG_NAME=YangBaxter
 
 services:
   - docker
