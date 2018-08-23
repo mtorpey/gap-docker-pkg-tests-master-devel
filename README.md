@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/gap-packages/gap-docker-pkg-tests-master-devel.svg?branch=master)](https://travis-ci.org/gap-package/gap-docker-pkg-tests-master-devel)
+[![Build Status](https://travis-ci.org/gap-packages/gap-docker-pkg-tests-master-devel.svg?branch=master)](https://travis-ci.org/gap-packages/gap-docker-pkg-tests-master-devel)
 
 # gap-docker-pkg-tests-master-devel
 
