@@ -3,11 +3,13 @@
 set -e
 
 SRCDIR=${SRCDIR:-$PWD}
+PKG_NAME="$(cut -d'/' -f2 <<< ${REPO_NAME})"
 
-echo SRCDIR   : $SRCDIR
-echo PKG_NAME : $PKG_NAME
+echo SRCDIR    : $SRCDIR
+echo REPO_NAME : $REPO_NAME
+echo PKG_NAME  : $PKG_NAME
 
-git clone https://github.com/gap-packages/${PKG_NAME}
+git clone https://github.com/${REPO_NAME}
 
 cd ${PKG_NAME}
 
