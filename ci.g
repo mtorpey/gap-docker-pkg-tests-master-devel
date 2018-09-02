@@ -1,4 +1,44 @@
-# Function to test package
+# Functions to test package
+#
+
+# Getting package name from its PackageInfo.g file
+#
+# Borrowed from `ValidatePackageInfo` in GAP's lib/package.gi
+GetNameFromPackageInfo := function(info)
+local record, pkgdir, i;
+
+if IsString( info ) then
+  if IsReadableFile( info ) then
+	Unbind( GAPInfo.PackageInfoCurrent );
+	Read( info );
+	if IsBound( GAPInfo.PackageInfoCurrent ) then
+	  record:= GAPInfo.PackageInfoCurrent;
+	  Unbind( GAPInfo.PackageInfoCurrent );
+	else
+	  Error( "the file <info> is not a `PackageInfo.g' file" );
+	fi;
+	pkgdir:= "./";
+	for i in Reversed( [ 1 .. Length( info ) ] ) do
+	  if info[i] = '/' then
+		pkgdir:= info{ [ 1 .. i ] };
+		break;
+	  fi;
+	od;
+  else
+	Error( "<info> is not the name of a readable file" );
+  fi;
+elif IsRecord( info ) then
+  pkgdir:= fail;
+  record:= info;
+else
+  Error( "<info> must be either a record or a filename" );
+fi;
+
+return record.PackageName;
+
+end;
+
+# Running standard test for the package
 #
 TestOnePackage := function(pkgname)
 local testfile, str;
