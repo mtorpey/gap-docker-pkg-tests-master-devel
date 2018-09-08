@@ -51,7 +51,6 @@ env:
     - REPO_NAME=gap-packages/grpconst # Constructing the Groups of a Given Order
     - REPO_NAME=gap-packages/guarana # Applications of Lie methods for computations with infinite polycyclic groups
     - REPO_NAME=gap-packages/guava # GAP package guava - computations relative to error-correcting codes
-    - REPO_NAME=gap-packages/happrime # HAP extension for small prime power groups
     - REPO_NAME=gap-packages/hecke # Decomposition matrices of Hecke algebras of the symmetric groups and q-Schur algebras
     - REPO_NAME=gap-packages/idrel # GAP package IdRel 
     - REPO_NAME=gap-packages/images # GAP package for computing minimal and canonical images
