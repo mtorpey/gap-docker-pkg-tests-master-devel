@@ -99,6 +99,7 @@ env:
     - REPO_NAME=gap-packages/sglppow # Database of groups of prime-power order for some prime-powers
     - REPO_NAME=gap-packages/sgpdec # GAP package for Hierarchical Composition and Decomposition of Permutation Groups and Transformation Semigroups
     - REPO_NAME=gap-packages/sgpviz # A GAP package for visualizing finite semigroups
+    - REPO_NAME=gap-packages/singular # A GAP interface to Singular
     - REPO_NAME=gap-packages/SingularInterface # A GAP package for accessing Singular from within GAP
     - REPO_NAME=gap-packages/smallgrp # The GAP Small Groups Library
     - REPO_NAME=gap-packages/sophus # Computing in nilpotent Lie algebras
