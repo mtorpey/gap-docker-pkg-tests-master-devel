@@ -121,6 +121,7 @@ env:
     - REPO_NAME=duskydolphin/DeepThoughtPackage
     - REPO_NAME=dylanpeifer/difsets 
     - REPO_NAME=frankluebeck/EDIM
+    - REPO_NAME=hulpke/matgrp
     - REPO_NAME=hulpke/transgrp
     - REPO_NAME=nzidaric/fsr
     - REPO_NAME=pjastr/NoCK
