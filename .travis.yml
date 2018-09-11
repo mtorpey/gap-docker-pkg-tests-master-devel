@@ -19,7 +19,7 @@ env:
     - REPO_NAME=gap-packages/curlInterface # Easy web access for GAP
     - REPO_NAME=gap-packages/Digraphs # The GAP package Digraphs
     - REPO_NAME=gap-packages/example # GAP Example Package
-    - REPO_NAME=mtorpey/curlInterface # My own version
+    - REPO_NAME=mtorpey/curlInterface -b availability-test # My own version
 
 services:
   - docker
