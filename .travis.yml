@@ -17,7 +17,7 @@ env:
   matrix:
     - REPO_NAME=gap-packages/curlInterface # Easy web access for GAP
     - REPO_NAME=gap-packages/example # GAP Example Package
-    - REPO_NAME="mtorpey/curlInterface -b fix-ftp"
+    - REPO_NAME=mtorpey/curlInterface
 
 services:
   - docker
